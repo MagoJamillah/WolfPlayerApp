@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="6dp"
+    android:paddingLeft="7dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp"
+    tools:context="magojamillah.wolfplayer.MainPage$PlaceholderFragment">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/artistlist">
+
+    </ListView>
+
+
+</RelativeLayout>
