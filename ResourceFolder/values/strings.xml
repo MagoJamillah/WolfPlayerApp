@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Wolf Player</string>
+
+
+    <string name="title_activity_scan_page">Scan Audio</string>
+    <string name="speech_prompt">Listening&#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="title_activity_music_list">Music Library</string>
+    <string name="title_activity_main_page">Your Menu </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_music_library">My Music</string>
+
+    <string name="shuffle">Shuffle</string>
+    <string name="end">End</string>
+    <string name="About">About</string>
+    <string name="Settings">Settings</string>
+    <string name="Scan_Song">Scan Song</string>
+
+
+</resources>
