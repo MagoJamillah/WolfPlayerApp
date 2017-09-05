@@ -11,7 +11,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
-import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -73,11 +72,11 @@ public class ScanPage extends AppCompatActivity implements RecognitionListener {
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent2 = new Intent(Intent.ACTION_WEB_SEARCH);
+                searchIntent = new Intent(Intent.ACTION_WEB_SEARCH);
                 String keyword= output.getText().toString();
-                intent2.putExtra(SearchManager.QUERY, keyword);
+                searchIntent.putExtra(SearchManager.QUERY, keyword);
 
-                startActivity(intent2);
+                startActivity(searchIntent);
             }
         });
 
@@ -151,7 +150,7 @@ public class ScanPage extends AppCompatActivity implements RecognitionListener {
         for (String result : matches)
             text += result + "\n";
 
-        output.setText("Am all the way up");
+        output.setText(text);
 
     }
 
