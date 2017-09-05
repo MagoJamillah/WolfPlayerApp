@@ -7,64 +7,59 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/darker_gray"
     tools:context="magojamillah.wolfplayer.ScanPage">
 
 
-    <ImageButton
-        android:layout_width="wrap_content"
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@android:drawable/ic_btn_speak_now"
-        android:id="@+id/scanbutton"
-        android:layout_marginBottom="106dp"
-        android:layout_above="@+id/button3"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Stop Scan"
-        android:id="@+id/button2"
-
-        android:layout_alignBaseline="@+id/button4"
-        android:layout_alignBottom="@+id/button4"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/results"
+        android:textAlignment="center"
+        android:layout_below="@+id/toggleButton"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Review"
-        android:id="@+id/button3"
-        android:layout_alignTop="@+id/button4"
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
-
-    <Button
+    <ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="STOP review"
-        android:id="@+id/button4"
-        android:layout_marginBottom="117dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:id="@+id/toggleButton"
+        style="@android:style/Widget.ImageButton"
+        android:checked="false"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Audio"
+        android:id="@+id/button"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Tap mic to Scan Audio"
+        android:text="Click the button to turn Audio Scan ON or OFF!"
         android:id="@+id/textView"
-        android:layout_marginBottom="30dp"
-        android:layout_above="@+id/scanbutton"
-        android:layout_centerHorizontal="true" />
-
-    <ProgressBar
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/progressBar"
-        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
+
